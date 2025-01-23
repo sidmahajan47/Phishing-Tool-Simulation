@@ -62,6 +62,15 @@ Admin Dashboard: <http://localhost:5000/admin>
 
 ![login page](https://github.com/user-attachments/assets/35895ac5-d4c7-46c0-9df7-f1454c48749d)
 
+---
+## Contact
+
+If you have any questions, suggestions, or feedback, feel free to reach out:
+
+- **Email**: [sidmahajan47@gmail.com](mailto:sidmahajan47@gmail.com)
+- **GitHub**: [sidmahajan47](https://github.com/sidmahajan47)
+- **LinkedIn**: [Siddhesh Mahajan](https://www.linkedin.com/in/siddheshmahajan47/)
+
 
 
 
