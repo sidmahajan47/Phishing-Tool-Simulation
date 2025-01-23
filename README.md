@@ -51,8 +51,14 @@ Admin Dashboard: <http://localhost:5000/admin>
 ---
 # ⚙️ Snapshots
 
+## Fake Login Page
+
+![G3_0_20250123191419](https://github.com/user-attachments/assets/a78471fe-8ae9-424c-907c-2c99c9bfc3e9)
+
+---
+## Admin Dashboard
 
 
-
+![G1_0_20250123190117](https://github.com/user-attachments/assets/11a2fec2-de78-4e49-b238-af1d427171de)
 
 
