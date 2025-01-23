@@ -1,0 +1,341 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Animated Grid background */
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200%;
+    height: 200%;
+    background-image: 
+        linear-gradient(to right, rgba(255, 0, 0, 0.1) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 35px 35px;
+    animation: gridMove 15s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+@keyframes gridMove {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-50%, -50%); }
+}
+
+/* Add these new animations and effects */
+
+/* Scanning line effect */
+@keyframes scan {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(100%);
+    }
+}
+
+/* Update existing body styles */
+body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200%;
+    background: linear-gradient(
+        to bottom,
+        transparent 0%,
+        rgba(255, 0, 0, 0.1) 50%,
+        transparent 100%
+    );
+    animation: scan 4s linear infinite;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.login-form {
+    background-color: rgba(20, 20, 20, 0.95);
+    padding: 30px;
+    border-radius: 15px;
+    width: 320px;
+    box-shadow: 0 0 30px rgba(255, 0, 0, 0.2);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    position: relative;
+    animation: float 6s ease-in-out infinite;
+    overflow: hidden;
+}
+
+/* Add cyber corners */
+.login-form::before,
+.login-form::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff0000;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.login-form::before {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.login-form::after {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+.login-form:hover::before,
+.login-form:hover::after {
+    width: 30px;
+    height: 30px;
+    border-color: #ff3333;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.5);
+}
+
+/* Update title styles */
+.login-form h2 {
+    color: #ff0000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+                 0 0 20px rgba(255, 0, 0, 0.3),
+                 0 0 30px rgba(255, 0, 0, 0.1);
+    position: relative;
+    animation: titlePulse 2s ease-in-out infinite;
+}
+
+/* Remove the previous ::before and ::after glitch effects */
+.login-form h2::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: 2px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ff0000,
+        transparent
+    );
+    animation: scanline 2s linear infinite;
+}
+
+@keyframes titlePulse {
+    0%, 100% {
+        opacity: 1;
+        text-shadow: 0 0 10px rgba(255, 0, 0, 0.5),
+                     0 0 20px rgba(255, 0, 0, 0.3),
+                     0 0 30px rgba(255, 0, 0, 0.1);
+    }
+    50% {
+        opacity: 0.8;
+        text-shadow: 0 0 15px rgba(255, 0, 0, 0.7),
+                     0 0 25px rgba(255, 0, 0, 0.5),
+                     0 0 35px rgba(255, 0, 0, 0.3);
+    }
+}
+
+@keyframes scanline {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+    50% {
+        width: 60%;
+        opacity: 1;
+    }
+    100% {
+        width: 0;
+        opacity: 0;
+    }
+}
+
+/* Input field effects */
+.login-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background-color: rgba(30, 30, 30, 0.9);
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #ffffff;
+    font-size: 16px;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 15px rgba(255, 0, 0, 0.3);
+    transform: scale(1.02);
+}
+
+/* Button effects */
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #ff0000, #cc0000);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+    overflow: hidden;
+}
+
+.login-form button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+}
+
+.login-form button::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 0, 0, 0.3),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: buttonGlow 2s linear infinite;
+}
+
+@keyframes buttonGlow {
+    0% {
+        transform: rotate(45deg) translateX(-100%);
+    }
+    100% {
+        transform: rotate(45deg) translateX(100%);
+    }
+}
+
+/* Floating animation */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    50% {
+        transform: translateY(-10px) rotate(0.5deg);
+    }
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.links a {
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    text-shadow: 0 0 10px rgba(255, 0, 0, 0.8);
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.admin-link {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.admin-btn {
+    background: transparent;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    color: rgba(255, 0, 0, 0.7);
+    padding: 8px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.admin-btn:hover {
+    background: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.2);
+}
+
+/* Admin button enhancement */
+.admin-btn::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 0, 0, 0.2),
+        transparent
+    );
+    transform: rotate(45deg);
+    animation: adminGlow 3s linear infinite;
+}
+
+@keyframes adminGlow {
+    0% {
+        transform: rotate(45deg) translateX(-100%);
+    }
+    100% {
+        transform: rotate(45deg) translateX(100%);
+    }
+}
+
+/* Instead, add this smooth hover effect */
+.login-form:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 40px rgba(255, 0, 0, 0.3);
+    transition: all 0.3s ease;
+} 
