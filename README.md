@@ -63,7 +63,7 @@ Admin Dashboard: <http://localhost:5000/admin>
 ![login page](https://github.com/user-attachments/assets/35895ac5-d4c7-46c0-9df7-f1454c48749d)
 
 ---
-## Contact
+## 📱 Contact
 
 If you have any questions, suggestions, or feedback, feel free to reach out:
 
@@ -72,7 +72,7 @@ If you have any questions, suggestions, or feedback, feel free to reach out:
 - **LinkedIn**: [Siddhesh Mahajan](https://www.linkedin.com/in/siddheshmahajan47/)
 
 ---
-## License
+## ✅ License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
 
