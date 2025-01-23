@@ -53,12 +53,17 @@ Admin Dashboard: <http://localhost:5000/admin>
 
 ## Fake Login Page
 
-![G3_0_20250123191419](https://github.com/user-attachments/assets/a78471fe-8ae9-424c-907c-2c99c9bfc3e9)
+![admin](https://github.com/user-attachments/assets/0d2c05f2-e0ec-4944-8dcd-6ac6f120bcd4)
+
+
 
 ---
 ## Admin Dashboard
 
+![login page](https://github.com/user-attachments/assets/35895ac5-d4c7-46c0-9df7-f1454c48749d)
 
-![G1_0_20250123190117](https://github.com/user-attachments/assets/11a2fec2-de78-4e49-b238-af1d427171de)
+
+
+
 
 
