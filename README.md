@@ -33,4 +33,6 @@ https://github.com/sidmahajan47/Phishing-Tool-Simulation.git
  
 cd phishing-simulation-tool
 
+pip install flask
+
 
