@@ -71,6 +71,11 @@ If you have any questions, suggestions, or feedback, feel free to reach out:
 - **GitHub**: [sidmahajan47](https://github.com/sidmahajan47)
 - **LinkedIn**: [Siddhesh Mahajan](https://www.linkedin.com/in/siddheshmahajan47/)
 
+---
+## License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.
+
 
 
 
