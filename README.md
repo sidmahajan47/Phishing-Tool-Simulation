@@ -26,11 +26,11 @@ A simple phishing simulation tool designed for **educational purposes**. This to
 ## 🔃 Installation
 
 1. **Clone the Repository**:
-   ```bash
+ ```bash
 https://github.com/sidmahajan47/Phishing-Tool-Simulation.git
- 
+
 2.Navigate to the Project Folder:
- '''bash
+ 
 cd phishing-simulation-tool
 
 
