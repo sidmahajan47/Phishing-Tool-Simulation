@@ -49,7 +49,7 @@ Fake Login Page: <http://localhost:5000/>
 Admin Dashboard: <http://localhost:5000/admin>
 
 ---
-#**⭐ Snapshots **
+# ⚙️ Snapshots
 
 
 
